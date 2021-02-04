@@ -39,6 +39,7 @@ const App = () => {
         <input className="search-bar" type="text" value={search} onChange={updateSearch} />
         <button className="search-button" type="submit">Search</button>
       </form>
+      <div className="recipes">
       {recipes.map(recipe => (
         <Recipe key={recipe.recipe.label} 
           title={recipe.recipe.label}
@@ -47,6 +48,7 @@ const App = () => {
           ingredients={recipe.recipe.ingredients}
           />
       ))}
+      </div>
     </div>
   );
   }
