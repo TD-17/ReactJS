@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '.';
+import style from './recipe.module.css';
 
 const Recipe = ({title, calories, image, ingredients}) => {
     return(
@@ -11,7 +11,7 @@ const Recipe = ({title, calories, image, ingredients}) => {
                 ))}
             </ol>
             <p><b>calories :</b> {calories}</p>
-            <img src={image} alt=""/>
+            <img className={style.image} src={image} alt=""/>
         </div>
     );
 };
